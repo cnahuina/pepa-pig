@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        elevation: 0.0,
+        elevation: 10.0,
         backgroundColor: Colors.transparent,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               Container(
                 padding: EdgeInsets.all(2.0),
-                height: 250.0,
+                height: 260.0,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
@@ -72,8 +72,8 @@ class _HomePageState extends State<HomePage> {
                               )
                             ),
                             Positioned(
-                              left: 15.0,
-                              top: 130.0,
+                              left: 10.0,
+                              top: 110.0,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
-                                    "\$23.0",
+                                    "\S/.23.0",
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 20.0,
@@ -102,14 +102,13 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(height: 10.0),
-              Padding(
-                  padding: const EdgeInsets.only(left: 17.0),
+              Center(
                   child: Text(
                     "Ofertas",
                     style:
                         TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.left,
-                  )),
+                  ),
+                  ),
               SizedBox(height: 15.0),
               GridView.count(
                 crossAxisCount: 2,
@@ -138,8 +137,8 @@ class _HomePageState extends State<HomePage> {
       int comment, int cardIndex) {
     return Padding(
       padding: cardIndex.isEven
-          ? EdgeInsets.only(right: 15.0)
-          : EdgeInsets.only(left: 15.0),
+          ? EdgeInsets.only(right: 20.0)
+          : EdgeInsets.only(left: 20.0),
       child: Container(
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.0),
@@ -153,7 +152,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  height: 125.0,
+                  height: 115.0,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(7.0),
                       image: DecorationImage(
